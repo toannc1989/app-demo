@@ -4,7 +4,7 @@ metadata:
   name: nginx
   namespace: argo-demo
 spec:
-  type: Nodeport
+  type: NodePort
   selector:
     app.kubernetes.io/name: nginx
   ports:
