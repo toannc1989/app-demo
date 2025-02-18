@@ -4,6 +4,7 @@ metadata:
   name: argocd-local
   namespace: argo-demo
 spec:
+  ingressClassName: nginx
   rules:
   - host: argocd.toannc.local
     http:
