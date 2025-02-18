@@ -4,11 +4,10 @@ metadata:
   name: nginx
   namespace: argo-demo
 spec:
-  type: ClusterIP
+  type: Loadbalancer
   selector:
     app.kubernetes.io/name: nginx
   ports:
     - protocol: TCP
       port: 80
       targetPort: http
-      nodePort: 30080
